@@ -268,10 +268,13 @@ def test_hanowa():
 
 
 def test_hilb():
-    """Simple test of hilb() Hilbert matrices"""
+    """Simple test of hilb() and invhilb() Hilbert matrices"""
     a = rogues.hilb(10)
     cond = nl.cond(a)
     assert(cond > 1e+12)
+
+    I = np.dot(rogues.hilb(5), rogues.invhilb(5))
+    npt.assert_array_almost_equal(I, np.eye(5))
 
 
 def test_invhess():

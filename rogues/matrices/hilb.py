@@ -1,9 +1,8 @@
 import numpy as np
-
+from rogues.utils.binomial import binomial
 
 class Higham(Exception):
     pass
-
 
 def hilb(n, m=0):
     """
@@ -41,3 +40,26 @@ def hilb(n, m=0):
 
     v = np.arange(1, n + 1) + np.arange(0, m)[:, np.newaxis]
     return 1. / v
+
+
+def invhilb(n):
+    """
+    invhilb   Generate the exact inverse of the n-by-n Hilbert matrix.
+
+    Limitations:
+    Comparing invhilb(n) with inv(hilb(n)) involves the effects of two or
+    three sets of roundoff errors:
+
+        - The errors caused by representing hilb(n)
+        - The errors in the matrix inversion process
+        - The errors, if any, in representing invhilb(n)
+
+    It turns out that the first of these, which involves representing
+    fractions like 1/3 and 1/5 in floating-point, is the most significant.
+    """
+    H = np.empty((n, n), dtype=np.int64)
+    for i in range(n):
+        for j in range(n):
+            H[i, j] = ((-1)**(i + j)) * (i + j + 1) * binomial(n + i, n - j - 1) * \
+             binomial(n + j, n - i - 1) * binomial(i + j, i) ** 2
+    return H
