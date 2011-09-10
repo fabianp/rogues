@@ -2,7 +2,7 @@ import numpy as np
 
 
 def chebspec(n, k=0):
-    """"
+    """
     CHEBSPEC  Chebyshev spectral differentiation matrix.
           c = chebspec(n, k) is a Chebyshev spectral differentiation
           matrix of order n.  k = 0 (the default) or 1.
