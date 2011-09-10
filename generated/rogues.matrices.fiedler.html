@@ -1,0 +1,108 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.fiedler &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.forsythe" href="rogues.matrices.forsythe.html" />
+    <link rel="prev" title="rogues.matrices.dramadah" href="rogues.matrices.dramadah.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.fiedler</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.dramadah.html">rogues.matrices.dramadah</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.forsythe.html">rogues.matrices.forsythe</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-fiedler">
+<h1>rogues.matrices.fiedler<a class="headerlink" href="#rogues-matrices-fiedler" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.fiedler">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">fiedler</tt><big>(</big><em>c</em><big>)</big><a class="headerlink" href="#rogues.matrices.fiedler" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>FIEDLER  Fiedler matrix - symmetric.</dt>
+<dd><p class="first">A = FIEDLER(C), where C is an n-vector, is the n-by-n symmetric
+matrix with elements ABS(C(i)-C(j)).
+Special case: if C is a scalar, then A = FIEDLER(1:C)</p>
+<blockquote>
+(i.e. A(i,j) = ABS(i-j)).</blockquote>
+<dl class="last docutils">
+<dt>Properties:</dt>
+<dd><dl class="first docutils">
+<dt>FIEDLER(N) has a dominant positive eigenvalue and all the other</dt>
+<dd>eigenvalues are negative (Szego, 1936).</dd>
+</dl>
+<p>Explicit formulas for INV(A) and DET(A) are given by Todd (1977)
+and attributed to Fiedler.  These indicate that INV(A) is
+tridiagonal except for nonzero (1,n) and (n,1) elements.
+[I think these formulas are valid only if the elements of
+C are in increasing or decreasing order&#8212;NJH.]</p>
+<p>References:
+G. Szego, Solution to problem 3705, Amer. Math. Monthly,</p>
+<blockquote>
+43 (1936), pp. 246-259.</blockquote>
+<ol class="last upperalpha simple" start="10">
+<li>Todd, Basic Numerical Mathematics, Vol. 2: Numerical Algebra,
+Birkhauser, Basel, and Academic Press, New York, 1977, p. 159.</li>
+</ol>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.dramadah.html">rogues.matrices.dramadah</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.forsythe.html">rogues.matrices.forsythe</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

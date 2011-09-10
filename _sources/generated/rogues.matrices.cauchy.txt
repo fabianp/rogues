@@ -1,0 +1,6 @@
+rogues.matrices.cauchy
+======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: cauchy

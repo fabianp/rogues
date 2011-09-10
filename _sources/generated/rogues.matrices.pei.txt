@@ -1,0 +1,6 @@
+rogues.matrices.pei
+===================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: pei

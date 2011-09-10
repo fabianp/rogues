@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.comp &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.compan" href="rogues.matrices.compan.html" />
+    <link rel="prev" title="rogues.matrices.clement" href="rogues.matrices.clement.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.comp</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.clement.html">rogues.matrices.clement</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.compan.html">rogues.matrices.compan</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-comp">
+<h1>rogues.matrices.comp<a class="headerlink" href="#rogues-matrices-comp" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.comp">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">comp</tt><big>(</big><em>a</em>, <em>k=0</em><big>)</big><a class="headerlink" href="#rogues.matrices.comp" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>COMP    Comparison matrices.</dt>
+<dd><p class="first">comp(a) is diag(b) - tril(b,-1) - triu(b,1), where b = abs(a).
+comp(a, 1) is a with each diagonal element replaced by its
+absolute value, and each off-diagonal element replaced by minus
+the absolute value of the largest element in absolute value in
+its row.  however, if a is triangular comp(a, 1) is too.
+comp(a, 0) is the same as comp(a).
+comp(a) is often denoted by m(a) in the literature.</p>
+<p class="last">Reference (e.g.):
+N.J. Higham, A survey of condition number estimation for
+triangular matrices, SIAM Review, 29 (1987), pp. 575-596.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.clement.html">rogues.matrices.clement</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.compan.html">rogues.matrices.compan</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

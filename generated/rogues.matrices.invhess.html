@@ -1,0 +1,116 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.invhess &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.invol" href="rogues.matrices.invol.html" />
+    <link rel="prev" title="rogues.matrices.hilb" href="rogues.matrices.hilb.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.invhess</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.hilb.html">rogues.matrices.hilb</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.invol.html">rogues.matrices.invol</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-invhess">
+<h1>rogues.matrices.invhess<a class="headerlink" href="#rogues-matrices-invhess" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.invhess">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">invhess</tt><big>(</big><em>x</em>, <em>y=None</em><big>)</big><a class="headerlink" href="#rogues.matrices.invhess" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>invhess  inverse of an upper hessenberg matrix.</dt>
+<dd><p class="first">invhess(x, y), where x is an n-vector and y an n-1 vector,
+is the matrix whose lower triangle agrees with that of
+np.outer(np.ones(n), x) and whose strict upper triangle agrees with
+that of np.outer(np.r_[1, y], np.ones(n))
+The matrix is nonsingular if x[1] != 0 and x[i+1] != y[i]
+for all i, and its inverse is an upper hessenberg matrix.
+If y is omitted it defaults to -x[0:n-2]
+Special case: if x is a scalar invhess(x) is the same as
+invhess(arange(1, x + 1)).</p>
+<p>References:
+F.N. Valvi and V.S. Geroyannis, Analytic inverses and</p>
+<blockquote>
+determinants for a class of matrices, IMA Journal of Numerical
+Analysis, 7 (1987), pp. 123-128.</blockquote>
+<dl class="docutils">
+<dt>W.-L. Cao and W.J. Stewart, A note on inverses of Hessenberg-like</dt>
+<dd>matrices, Linear Algebra and Appl., 76 (1986), pp. 233-240.</dd>
+</dl>
+<ol class="upperalpha" start="25">
+<li><dl class="first docutils">
+<dt>Ikebe, On inverses of Hessenberg matrices, Linear Algebra and</dt>
+<dd><p class="first last">Appl., 24 (1979), pp. 93-97.</p>
+</dd>
+</dl>
+</li>
+</ol>
+<ol class="last upperalpha" start="16">
+<li><dl class="first docutils">
+<dt>Rozsa, On the inverse of band matrices, Integral Equations and</dt>
+<dd><p class="first last">Operator Theory, 10 (1987), pp. 82-95.</p>
+</dd>
+</dl>
+</li>
+</ol>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.hilb.html">rogues.matrices.hilb</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.invol.html">rogues.matrices.invol</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

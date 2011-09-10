@@ -1,0 +1,107 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.clement &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.comp" href="rogues.matrices.comp.html" />
+    <link rel="prev" title="rogues.matrices.chow" href="rogues.matrices.chow.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.clement</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.chow.html">rogues.matrices.chow</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.comp.html">rogues.matrices.comp</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-clement">
+<h1>rogues.matrices.clement<a class="headerlink" href="#rogues-matrices-clement" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.clement">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">clement</tt><big>(</big><em>n</em>, <em>k=0</em><big>)</big><a class="headerlink" href="#rogues.matrices.clement" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>CLEMENT   Clement matrix - tridiagonal with zero diagonal entries.</dt>
+<dd><p class="first">CLEMENT(N, K) is a tridiagonal matrix with zero diagonal entries
+and known eigenvalues.  It is singular if N is odd.  About 64
+percent of the entries of the inverse are zero.  The eigenvalues
+are plus and minus the numbers N-1, N-3, N-5, ..., (1 or 0).
+For K = 0 (the default) the matrix is unsymmetric, while for
+K = 1 it is symmetric.
+CLEMENT(N, 1) is diagonally similar to CLEMENT(N).</p>
+<p>Similar properties hold for TRIDIAG(X,Y,Z) where Y = ZEROS(N,1).
+The eigenvalues still come in plus/minus pairs but they are not
+known explicitly.</p>
+<p>References:
+P.A. Clement, A class of triple-diagonal matrices for test</p>
+<blockquote>
+purposes, SIAM Review, 1 (1959), pp. 50-52.</blockquote>
+<ol class="upperalpha simple">
+<li>Edelman and E. Kostlan, The road from Kac&#8217;s matrix to Kac&#8217;s
+random polynomials. In John~G. Lewis, editor, Proceedings of
+the Fifth SIAM Conference on Applied Linear Algebra Society
+for Industrial and Applied Mathematics, Philadelphia, 1994,
+pp. 503-507.</li>
+</ol>
+<ol class="last upperalpha simple" start="15">
+<li>Taussky and J. Todd, Another look at a matrix of Mark Kac,
+Linear Algebra and Appl., 150 (1991), pp. 341-360.</li>
+</ol>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.chow.html">rogues.matrices.chow</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.comp.html">rogues.matrices.comp</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+rogues.matrices.riemann
+=======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: riemann

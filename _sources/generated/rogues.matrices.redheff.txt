@@ -1,0 +1,6 @@
+rogues.matrices.redheff
+=======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: redheff

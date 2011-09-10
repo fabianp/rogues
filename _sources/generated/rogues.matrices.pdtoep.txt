@@ -1,0 +1,6 @@
+rogues.matrices.pdtoep
+======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: pdtoep

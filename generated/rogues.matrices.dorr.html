@@ -1,0 +1,97 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.dorr &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.dramadah" href="rogues.matrices.dramadah.html" />
+    <link rel="prev" title="rogues.matrices.dingdong" href="rogues.matrices.dingdong.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.dorr</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.dingdong.html">rogues.matrices.dingdong</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.dramadah.html">rogues.matrices.dramadah</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-dorr">
+<h1>rogues.matrices.dorr<a class="headerlink" href="#rogues-matrices-dorr" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.dorr">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">dorr</tt><big>(</big><em>n</em>, <em>theta=0.01</em>, <em>r_matrix=False</em>, <em>set_sparse=False</em><big>)</big><a class="headerlink" href="#rogues.matrices.dorr" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>dorr  dorr matrix - diagonally dominant, ill conditioned, tridiagonal.</dt>
+<dd><p class="first">c, d, e = dorr(n, theta) returns the vectors defining a row diagonally
+dominant, tridiagonal m-matrix that is ill conditioned for small
+values of the parameter theta &gt;= 0.
+If r_matrix is set to True, then c = full(tridiag(c,d,e)), i.e.,
+the matrix iself is returned.  The format for the matrix is set by
+the boolean set_sparse.  If set to true, return a matrix in sparse
+matrix format.  Default is False.</p>
+<p>The columns of inv(c) vary greatly in norm.  theta defaults to 0.01.
+The amount of diagonal dominance is given by (ignoring rounding errors):</p>
+<blockquote>
+comp(c)*ones(n,1) = theta*(n+1)^2 * [1 0 0 ... 0 1]&#8217;.</blockquote>
+<p class="last">Reference:
+F.W. Dorr, An example of ill-conditioning in the numerical
+solution of singular perturbation problems, Math. Comp., 25 (1971),
+pp. 271-283.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.dingdong.html">rogues.matrices.dingdong</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.dramadah.html">rogues.matrices.dramadah</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

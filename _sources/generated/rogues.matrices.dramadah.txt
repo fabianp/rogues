@@ -1,0 +1,6 @@
+rogues.matrices.dramadah
+========================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: dramadah

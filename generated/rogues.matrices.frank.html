@@ -1,0 +1,131 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.frank &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.gearm" href="rogues.matrices.gearm.html" />
+    <link rel="prev" title="rogues.matrices.forsythe" href="rogues.matrices.forsythe.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.frank</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.forsythe.html">rogues.matrices.forsythe</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.gearm.html">rogues.matrices.gearm</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-frank">
+<h1>rogues.matrices.frank<a class="headerlink" href="#rogues-matrices-frank" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.frank">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">frank</tt><big>(</big><em>n</em>, <em>k=0</em><big>)</big><a class="headerlink" href="#rogues.matrices.frank" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>frank(n, k = 0) Frank matrix&#8212;ill conditioned eigenvalues.</dt>
+<dd><p class="first">f = frank(n, k) is the Frank matrix of order N.  It is upper
+Hessenberg with determinant 1.  K = 0 is the default; if K = 1 the
+elements are reflected about the anti-diagonal (1,N)&#8211;(N,1).
+F has all positive eigenvalues and they occur in reciprocal pairs
+(so that 1 is an eigenvalue if N is odd).
+The eigenvalues of F may be obtained in terms of the zeros of the
+Hermite polynomials.
+The FLOOR(N/2) smallest eigenvalues of F are ill conditioned,
+the more so for bigger N.</p>
+<p>DET(FRANK(N)&#8217;) comes out far from 1 for large N&#8212;see Frank (1958)
+and Wilkinson (1960) for discussions.</p>
+<p>This version incorporates improvements suggested by W. Kahan.</p>
+<p>References:
+W.L. Frank, Computing eigenvalues of complex matrices by determinant</p>
+<blockquote>
+evaluation and by methods of Danilewski and Wielandt, J. Soc.
+Indust. Appl. Math., 6 (1958), pp. 378-392 (see pp. 385, 388).</blockquote>
+<dl class="docutils">
+<dt>G.H. Golub and J.H. Wilkinson, Ill-conditioned eigensystems and the</dt>
+<dd><dl class="first last docutils">
+<dt>computation of the Jordan canonical form, SIAM Review, 18 (1976),</dt>
+<dd>pp. 578-619 (Section 13).</dd>
+</dl>
+</dd>
+</dl>
+<ol class="upperalpha simple" start="8">
+<li>Rutishauser, On test matrices, Programmation en Mathematiques
+Numeriques, Editions Centre Nat. Recherche Sci., Paris, 165,
+1966, pp. 349-365.  Section 9.</li>
+</ol>
+<dl class="docutils">
+<dt>J.H. Wilkinson, Error analysis of floating-point computation,</dt>
+<dd>Numer. Math., 2 (1960), pp. 319-340 (Section 8).</dd>
+<dt>J.H. Wilkinson, The Algebraic Eigenvalue Problem, Oxford University</dt>
+<dd>Press, 1965 (pp. 92-93).</dd>
+</dl>
+<p>The next two references give details of the eigensystem, as does
+Rutishauser (see above).
+P.J. Eberlein, A note on the matrices denoted by B_n, SIAM J. Appl.</p>
+<blockquote>
+Math., 20 (1971), pp. 87-92.</blockquote>
+<dl class="last docutils">
+<dt>J.M. Varah, A generalization of the Frank matrix, SIAM J. Sci. Stat.</dt>
+<dd>Comput., 7 (1986), pp. 835-839.</dd>
+</dl>
+</dd>
+</dl>
+<p>NOTE: This is a slightly different implementation from Version 3.  It
+loosely follows the TOMS694 version, _except_ that it directly computes
+the frank matrix, instead of its anti-transposed version.  Therefore,
+we take the anti-transpose if k == 1</p>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.forsythe.html">rogues.matrices.forsythe</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.gearm.html">rogues.matrices.gearm</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

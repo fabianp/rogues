@@ -1,0 +1,6 @@
+rogues.matrices.qmult
+=====================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: qmult

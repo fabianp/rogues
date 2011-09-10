@@ -1,0 +1,6 @@
+rogues.matrices.lotkin
+======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: lotkin

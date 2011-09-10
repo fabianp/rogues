@@ -1,0 +1,6 @@
+rogues.matrices.pentoep
+=======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: pentoep

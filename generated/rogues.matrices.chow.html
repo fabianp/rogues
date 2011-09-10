@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.chow &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.clement" href="rogues.matrices.clement.html" />
+    <link rel="prev" title="rogues.matrices.chebvand" href="rogues.matrices.chebvand.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.chow</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.chebvand.html">rogues.matrices.chebvand</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.clement.html">rogues.matrices.clement</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-chow">
+<h1>rogues.matrices.chow<a class="headerlink" href="#rogues-matrices-chow" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.chow">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">chow</tt><big>(</big><em>n</em>, <em>alpha=1</em>, <em>delta=0</em><big>)</big><a class="headerlink" href="#rogues.matrices.chow" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>chow(n, alpha, delta):  chow matrix - a singular toeplitz</dt>
+<dd><p class="first">lower hessenberg matrix.
+a = chow(n, alpha, delta) is a toeplitz lower hessenberg matrix
+a = h(alpha) + delta*eye, where h(i,j) = alpha^(i-j+1).
+h(alpha) has p = floor(n/2) zero eigenvalues, the rest being
+4*alpha*cos( k*pi/(n+2) )^2, k=1:n-p.
+defaults: alpha = 1, delta = 0.</p>
+<p>References:
+T.S. Chow, A class of Hessenberg matrices with known</p>
+<blockquote>
+eigenvalues and inverses, SIAM Review, 11 (1969), pp. 391-395.</blockquote>
+<ol class="last upperalpha simple" start="7">
+<li>Fairweather, On the eigenvalues and eigenvectors of a class of
+Hessenberg matrices, SIAM Review, 13 (1971), pp. 220-221.</li>
+</ol>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.chebvand.html">rogues.matrices.chebvand</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.clement.html">rogues.matrices.clement</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

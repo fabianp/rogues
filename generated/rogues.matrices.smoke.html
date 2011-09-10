@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.smoke &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.toeplitz" href="rogues.matrices.toeplitz.html" />
+    <link rel="prev" title="rogues.matrices.riemann" href="rogues.matrices.riemann.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.smoke</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.riemann.html">rogues.matrices.riemann</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.toeplitz.html">rogues.matrices.toeplitz</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-smoke">
+<h1>rogues.matrices.smoke<a class="headerlink" href="#rogues-matrices-smoke" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.smoke">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">smoke</tt><big>(</big><em>n</em>, <em>k=0</em><big>)</big><a class="headerlink" href="#rogues.matrices.smoke" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>smoke     smoke matrix - complex, with a <a href="#id1"><span class="problematic" id="id2">`</span></a>smoke ring&#8217; pseudospectrum.</dt>
+<dd><p class="first">smoke(n) is an n-by-n matrix with 1s on the
+superdiagonal, 1 in the (n,1) position, and powers of
+roots of unity along the diagonal.
+smoke(n, 1) is the same except for a zero (n,1) element.
+the eigenvalues of smoke(n, 1) are the n&#8217;th roots of unity;
+those of smoke(n) are the n&#8217;th roots of unity times 2^(1/n).</p>
+<p>Try ps(smoke(32)).  For smoke(n, 1) the pseudospectrum looks
+like a sausage folded back on itself.
+gersh(smoke(n, 1)) is interesting.</p>
+<p class="last">Reference:
+L. Reichel and L.N. Trefethen, Eigenvalues and pseudo-eigenvalues of
+Toeplitz matrices, Linear Algebra and Appl., 162-164:153-185, 1992.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.riemann.html">rogues.matrices.riemann</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.toeplitz.html">rogues.matrices.toeplitz</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

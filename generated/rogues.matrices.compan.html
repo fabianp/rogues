@@ -1,0 +1,108 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.compan &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.condex" href="rogues.matrices.condex.html" />
+    <link rel="prev" title="rogues.matrices.comp" href="rogues.matrices.comp.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.compan</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.comp.html">rogues.matrices.comp</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.condex.html">rogues.matrices.condex</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-compan">
+<h1>rogues.matrices.compan<a class="headerlink" href="#rogues-matrices-compan" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.compan">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">compan</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#rogues.matrices.compan" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>COMPAN  Companion matrix.</dt>
+<dd><p class="first">compan(p) is a companion matrix.  There are three cases.
+If p is a scalar then compan(p) is the p-by-p matrix compan(1:p+1).
+If p is an (n+1)-vector, compan(p) is the n-by-n companion matrix</p>
+<blockquote>
+whose first row is -p(2:n+1)/p(1).</blockquote>
+<dl class="docutils">
+<dt>If p is a square matrix, compan(p) is the companion matrix</dt>
+<dd>of the characteristic polynomial of p, computed as
+compan(poly(p)).</dd>
+</dl>
+<p>References:
+J.H. Wilkinson, The Algebraic Eigenvalue Problem,</p>
+<blockquote>
+Oxford University Press, 1965, p. 12.</blockquote>
+<dl class="docutils">
+<dt>G.H. Golub and C.F. Van Loan, Matrix Computations, second edition,</dt>
+<dd>Johns Hopkins University Press, Baltimore, Maryland, 1989,
+sec 7.4.6.</dd>
+</dl>
+<ol class="upperalpha simple" start="3">
+<li>Kenney and A.J. Laub, Controllability and stability radii for</li>
+</ol>
+<blockquote class="last">
+companion form systems, Math. Control Signals Systems, 1 (1988),
+pp. 239-256. (Gives explicit formulas for the singular values of
+COMPAN(P).)</blockquote>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.comp.html">rogues.matrices.comp</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.condex.html">rogues.matrices.condex</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

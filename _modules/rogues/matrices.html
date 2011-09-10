@@ -1,0 +1,129 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../../index.html" />
+    <link rel="up" title="Module code" href="../index.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        <a class="uplink" href="../../index.html">Contents</a>
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <h1>Source code for rogues.matrices</h1><div class="highlight"><pre>
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s">&#39;bandred&#39;</span><span class="p">,</span> <span class="s">&#39;cauchy&#39;</span><span class="p">,</span> <span class="s">&#39;chebspec&#39;</span><span class="p">,</span> <span class="s">&#39;chebvand&#39;</span><span class="p">,</span> <span class="s">&#39;chow&#39;</span><span class="p">,</span> <span class="s">&#39;clement&#39;</span><span class="p">,</span> <span class="s">&#39;comp&#39;</span><span class="p">,</span>
+    <span class="s">&#39;compan&#39;</span><span class="p">,</span> <span class="s">&#39;condex&#39;</span><span class="p">,</span> <span class="s">&#39;cycol&#39;</span><span class="p">,</span> <span class="s">&#39;dingdong&#39;</span><span class="p">,</span> <span class="s">&#39;dorr&#39;</span><span class="p">,</span> <span class="s">&#39;dramadah&#39;</span><span class="p">,</span> <span class="s">&#39;fiedler&#39;</span><span class="p">,</span>
+    <span class="s">&#39;forsythe&#39;</span><span class="p">,</span> <span class="s">&#39;frank&#39;</span><span class="p">,</span> <span class="s">&#39;gearm&#39;</span><span class="p">,</span> <span class="s">&#39;gfpp&#39;</span><span class="p">,</span> <span class="s">&#39;grcar&#39;</span><span class="p">,</span> <span class="s">&#39;hadamard&#39;</span><span class="p">,</span> <span class="s">&#39;hankel&#39;</span><span class="p">,</span>
+    <span class="s">&#39;hanowa&#39;</span><span class="p">,</span> <span class="s">&#39;hilb&#39;</span><span class="p">,</span> <span class="s">&#39;invhess&#39;</span><span class="p">,</span> <span class="s">&#39;invol&#39;</span><span class="p">,</span> <span class="s">&#39;ipjfact&#39;</span><span class="p">,</span> <span class="s">&#39;jordbloc&#39;</span><span class="p">,</span> <span class="s">&#39;kahan&#39;</span><span class="p">,</span>
+    <span class="s">&#39;kms&#39;</span><span class="p">,</span> <span class="s">&#39;krylov&#39;</span><span class="p">,</span> <span class="s">&#39;lauchli&#39;</span><span class="p">,</span> <span class="s">&#39;lehmer&#39;</span><span class="p">,</span> <span class="s">&#39;lesp&#39;</span><span class="p">,</span> <span class="s">&#39;lotkin&#39;</span><span class="p">,</span> <span class="s">&#39;minij&#39;</span><span class="p">,</span> <span class="s">&#39;moler&#39;</span><span class="p">,</span>
+    <span class="s">&#39;neumann&#39;</span><span class="p">,</span> <span class="s">&#39;ohess&#39;</span><span class="p">,</span> <span class="s">&#39;parter&#39;</span><span class="p">,</span> <span class="s">&#39;pascal&#39;</span><span class="p">,</span> <span class="s">&#39;pdtoep&#39;</span><span class="p">,</span> <span class="s">&#39;pei&#39;</span><span class="p">,</span> <span class="s">&#39;pentoep&#39;</span><span class="p">,</span> <span class="s">&#39;poisson&#39;</span><span class="p">,</span>
+    <span class="s">&#39;prolate&#39;</span><span class="p">,</span> <span class="s">&#39;rando&#39;</span><span class="p">,</span> <span class="s">&#39;randsvd&#39;</span><span class="p">,</span> <span class="s">&#39;redheff&#39;</span><span class="p">,</span> <span class="s">&#39;riemann&#39;</span><span class="p">,</span> <span class="s">&#39;smoke&#39;</span><span class="p">,</span>
+    <span class="s">&#39;toeplitz&#39;</span><span class="p">,</span> <span class="s">&#39;tridiag&#39;</span><span class="p">,</span> <span class="s">&#39;triw&#39;</span><span class="p">,</span> <span class="s">&#39;utils&#39;</span><span class="p">,</span> <span class="s">&#39;warnings&#39;</span><span class="p">,</span> <span class="s">&#39;wathen&#39;</span><span class="p">,</span>
+    <span class="s">&#39;wilk&#39;</span><span class="p">,</span> <span class="s">&#39;wilkinson&#39;</span><span class="p">]</span>
+
+<span class="kn">from</span> <span class="nn">cauchy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">chebspec</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">chebvand</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">chow</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">clement</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">comp</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">compan</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">condex</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">cycol</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">dingdong</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">dorr</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">dramadah</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">fiedler</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">forsythe</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">frank</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">gearm</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">gfpp</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">grcar</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">hadamard</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">hankel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">hanowa</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">hilb</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">invhess</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">invol</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">ipjfact</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">jordbloc</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">kahan</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">kms</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">krylov</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">lauchli</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">lehmer</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">lesp</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">lotkin</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">minij</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">moler</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">neumann</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">ohess</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">parter</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">pascal</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">pdtoep</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">pei</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">pentoep</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">poisson</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">prolate</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">qmult</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">rando</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">randsvd</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">redheff</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">riemann</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">rogues</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">smoke</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">test</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">triw</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">wathen</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">wilk</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">wilkinson</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        <a class="uplink" href="../../index.html">Contents</a>
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

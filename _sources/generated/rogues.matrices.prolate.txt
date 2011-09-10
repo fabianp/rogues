@@ -1,0 +1,6 @@
+rogues.matrices.prolate
+=======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: prolate

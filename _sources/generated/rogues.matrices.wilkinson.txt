@@ -1,0 +1,6 @@
+rogues.matrices.wilkinson
+=========================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: wilkinson

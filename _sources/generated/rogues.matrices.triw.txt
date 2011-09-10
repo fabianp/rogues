@@ -1,0 +1,6 @@
+rogues.matrices.triw
+====================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: triw

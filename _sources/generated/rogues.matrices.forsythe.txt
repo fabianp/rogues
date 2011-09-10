@@ -1,0 +1,6 @@
+rogues.matrices.forsythe
+========================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: forsythe

@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.triw &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.wathen" href="rogues.matrices.wathen.html" />
+    <link rel="prev" title="rogues.matrices.tridiag" href="rogues.matrices.tridiag.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.triw</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.tridiag.html">rogues.matrices.tridiag</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.wathen.html">rogues.matrices.wathen</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-triw">
+<h1>rogues.matrices.triw<a class="headerlink" href="#rogues-matrices-triw" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.triw">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">triw</tt><big>(</big><em>n</em>, <em>alpha=-1</em>, <em>k=0</em><big>)</big><a class="headerlink" href="#rogues.matrices.triw" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>triw   Upper triangular matrix discussed by Wilkinson and others.</dt>
+<dd><p class="first">triw(n, alpha, k) is the upper triangular matrix with ones on
+the diagonal and ALPHAs on the first K &gt;= 0 superdiagonals.
+n may be a 2-tuple, in which case the matrix is n[0]-by-n[1] and
+upper trapezoidal.
+Defaults: alpha = -1,</p>
+<blockquote>
+k = n - 1     (full upper triangle).</blockquote>
+<p>triw(n) is a matrix discussed by Kahan, Golub and Wilkinson.</p>
+<dl class="docutils">
+<dt>Ostrowski (1954) shows that</dt>
+<dd>COND(TRIW(N,2)) = COT(PI/(4*N))^2,</dd>
+<dt>and for large ABS(ALPHA),</dt>
+<dd>COND(TRIW(N,ALPHA)) is approximately ABS(ALPHA)^N*SIN(PI/(4*N-2)).</dd>
+</dl>
+<p>Adding -2^(2-N) to the (N,1) element makes TRIW(N) singular,
+as does adding -2^(1-N) to all elements in the first column.</p>
+<p>References:
+G.H. Golub and J.H. Wilkinson, Ill-conditioned eigensystems and the</p>
+<blockquote>
+computation of the Jordan canonical form, SIAM Review,
+18(4), 1976, pp. 578-619.</blockquote>
+<ol class="upperalpha simple" start="23">
+<li>Kahan, Numerical linear algebra, Canadian Math. Bulletin,
+9 (1966), pp. 757-801.</li>
+</ol>
+<dl class="last docutils">
+<dt>A.M. Ostrowski, On the spectrum of a one-parametric family of</dt>
+<dd>matrices, J. Reine Angew. Math., 193 (3/4), 1954, pp. 143-160.</dd>
+<dt>J.H. Wilkinson, Singular-value decomposition&#8212;basic aspects,</dt>
+<dd>in D.A.H. Jacobs, ed., Numerical Software&#8212;Needs and Availability,
+Academic Press, London, 1978, pp. 109-135.</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.tridiag.html">rogues.matrices.tridiag</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.wathen.html">rogues.matrices.wathen</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

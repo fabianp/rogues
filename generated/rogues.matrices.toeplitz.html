@@ -1,0 +1,102 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.toeplitz &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.tridiag" href="rogues.matrices.tridiag.html" />
+    <link rel="prev" title="rogues.matrices.smoke" href="rogues.matrices.smoke.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.toeplitz</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.smoke.html">rogues.matrices.smoke</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.tridiag.html">rogues.matrices.tridiag</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-toeplitz">
+<h1>rogues.matrices.toeplitz<a class="headerlink" href="#rogues-matrices-toeplitz" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.toeplitz">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">toeplitz</tt><big>(</big><em>a</em>, <em>b=None</em><big>)</big><a class="headerlink" href="#rogues.matrices.toeplitz" title="Permalink to this definition">¶</a></dt>
+<dd><p>toeplitz(a) returns a toeplitz matrix given &#8220;a&#8221;, the first row of the
+matrix.  This matrix is defined as:</p>
+<blockquote>
+<dl class="docutils">
+<dt>[ [   a[0], a[1], a[2], a[3], ...,   a[n] ],</dt>
+<dd>[   a[n], a[0], a[1], a[2], ..., a[n-1] ],
+[ a[n-1], a[n], a[0], a[1], ..., a[n-2] ],
+...
+[   a[1], a[2], a[3], a[4], ...,   a[0] ]]</dd>
+</dl>
+</blockquote>
+<p>Note that this array is more properly called a &#8220;circulant&#8221; because each
+row is a circular shift of the one above it. Also, note that the main
+diagonal is constant and given by a[0].  If the array &#8220;a&#8221; is complex,
+the elements rotated to be under the main diagonal are complex conjugated
+to yield a Hermetian matrix.</p>
+<p>If called as toeplitz(a, b) then create the unsymetric toeplitz matrix.
+Here &#8220;b&#8221; would be the first row and &#8220;a&#8221; would be the first column. (This
+is bass-ackwards to follow the m*lab convention.) The second row shifts
+the first row to the right by one, but instead circularly shifting the
+last element of the row back into the first element, we shift in the
+successive elements of a as the element of b are shifted out.</p>
+<p>See the wikipedia entry for more information and references (especially the
+following: <a class="reference external" href="http://ee.stanford.edu/~gray/toeplitz.pdf">http://ee.stanford.edu/~gray/toeplitz.pdf</a>)</p>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.smoke.html">rogues.matrices.smoke</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.tridiag.html">rogues.matrices.tridiag</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

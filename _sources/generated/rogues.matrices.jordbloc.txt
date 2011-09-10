@@ -1,0 +1,6 @@
+rogues.matrices.jordbloc
+========================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: jordbloc

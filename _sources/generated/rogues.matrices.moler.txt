@@ -1,0 +1,6 @@
+rogues.matrices.moler
+=====================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: moler

@@ -1,0 +1,101 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.lesp &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.lotkin" href="rogues.matrices.lotkin.html" />
+    <link rel="prev" title="rogues.matrices.lehmer" href="rogues.matrices.lehmer.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.lesp</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.lehmer.html">rogues.matrices.lehmer</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.lotkin.html">rogues.matrices.lotkin</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-lesp">
+<h1>rogues.matrices.lesp<a class="headerlink" href="#rogues-matrices-lesp" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.lesp">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">lesp</tt><big>(</big><em>n</em><big>)</big><a class="headerlink" href="#rogues.matrices.lesp" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>LESP   A tridiagonal matrix with real, sensitive eigenvalues.</dt>
+<dd><p class="first">LESP(N) is an N-by-N matrix whose eigenvalues are real and smoothly
+distributed in the interval approximately [-2*N-3.5, -4.5].
+The sensitivities of the eigenvalues increase exponentially as
+the eigenvalues grow more negative.
+The matrix is similar to the symmetric tridiagonal matrix with
+the same diagonal entries and with off-diagonal entries 1,
+via a similarity transformation with d = np.diag(1!,2!,...,N!).</p>
+<p>References:
+H.W.J. Lenferink and M.N. Spijker, On the use of stability regions in</p>
+<blockquote>
+the numerical analysis of initial value problems,
+Math. Comp., 57 (1991), pp. 221-237.</blockquote>
+<dl class="last docutils">
+<dt>L.N. Trefethen, Pseudospectra of matrices, in Numerical Analysis 1991,</dt>
+<dd>Proceedings of the 14th Dundee Conference,
+D.F. Griffiths and G.A. Watson, eds, Pitman Research Notes in
+Mathematics, volume 260, Longman Scientific and Technical, Essex,
+UK, 1992, pp. 234-266.</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.lehmer.html">rogues.matrices.lehmer</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.lotkin.html">rogues.matrices.lotkin</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

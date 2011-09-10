@@ -1,0 +1,6 @@
+rogues.matrices.fiedler
+=======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: fiedler

@@ -1,0 +1,107 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.condex &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.cycol" href="rogues.matrices.cycol.html" />
+    <link rel="prev" title="rogues.matrices.compan" href="rogues.matrices.compan.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.condex</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.compan.html">rogues.matrices.compan</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.cycol.html">rogues.matrices.cycol</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-condex">
+<h1>rogues.matrices.condex<a class="headerlink" href="#rogues-matrices-condex" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.condex">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">condex</tt><big>(</big><em>n</em>, <em>k=4</em>, <em>theta=100</em><big>)</big><a class="headerlink" href="#rogues.matrices.condex" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>CONDEX   <a href="#id1"><span class="problematic" id="id2">`</span></a>Counterexamples&#8217; to matrix condition number estimators.</dt>
+<dd><p class="first">CONDEX(N, K, THETA) is a <a href="#id3"><span class="problematic" id="id4">`</span></a>counterexample&#8217; matrix to a condition
+estimator.  It has order N and scalar parameter THETA (default 100).
+If N is not equal to the <a href="#id5"><span class="problematic" id="id6">`</span></a>natural&#8217; size of the matrix then
+the matrix is padded out with an identity matrix to order N.
+The matrix, its natural size, and the estimator to which it applies
+are specified by K (default K = 4) as follows:</p>
+<blockquote>
+K = 1:   4-by-4,     LINPACK (RCOND)
+K = 2:   3-by-3,     LINPACK (RCOND)
+K = 3:   arbitrary,  LINPACK (RCOND) (independent of THETA)
+K = 4:   N &gt;= 4,     SONEST (Higham 1988)</blockquote>
+<dl class="docutils">
+<dt>(Note that in practice the K = 4 matrix is not usually a</dt>
+<dd>counterexample because of the rounding errors in forming it.)</dd>
+</dl>
+<p>References:
+A.K. Cline and R.K. Rew, A set of counter-examples to three</p>
+<blockquote>
+condition number estimators, SIAM J. Sci. Stat. Comput.,
+4 (1983), pp. 602-611.</blockquote>
+<dl class="last docutils">
+<dt>N.J. Higham, FORTRAN codes for estimating the one-norm of a real or</dt>
+<dd>complex matrix, with applications to condition estimation
+(Algorithm 674), ACM Trans. Math. Soft., 14 (1988), pp. 381-396.</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.compan.html">rogues.matrices.compan</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.cycol.html">rogues.matrices.cycol</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

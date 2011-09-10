@@ -1,0 +1,6 @@
+rogues.matrices.invhess
+=======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: invhess

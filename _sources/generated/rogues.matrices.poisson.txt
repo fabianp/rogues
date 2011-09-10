@@ -1,0 +1,6 @@
+rogues.matrices.poisson
+=======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: poisson

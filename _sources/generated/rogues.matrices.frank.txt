@@ -1,0 +1,6 @@
+rogues.matrices.frank
+=====================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: frank

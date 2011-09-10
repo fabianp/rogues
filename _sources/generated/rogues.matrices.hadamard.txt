@@ -1,0 +1,6 @@
+rogues.matrices.hadamard
+========================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: hadamard

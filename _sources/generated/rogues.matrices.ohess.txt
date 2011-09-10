@@ -1,0 +1,6 @@
+rogues.matrices.ohess
+=====================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: ohess

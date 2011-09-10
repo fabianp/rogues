@@ -1,0 +1,6 @@
+rogues.matrices.toeplitz
+========================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: toeplitz

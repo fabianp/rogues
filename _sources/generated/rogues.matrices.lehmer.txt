@@ -1,0 +1,6 @@
+rogues.matrices.lehmer
+======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: lehmer

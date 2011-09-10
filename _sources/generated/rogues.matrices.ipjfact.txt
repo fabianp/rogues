@@ -1,0 +1,6 @@
+rogues.matrices.ipjfact
+=======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: ipjfact

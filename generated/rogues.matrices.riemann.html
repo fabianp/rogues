@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.riemann &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.smoke" href="rogues.matrices.smoke.html" />
+    <link rel="prev" title="rogues.matrices.redheff" href="rogues.matrices.redheff.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.riemann</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.redheff.html">rogues.matrices.redheff</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.smoke.html">rogues.matrices.smoke</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-riemann">
+<h1>rogues.matrices.riemann<a class="headerlink" href="#rogues-matrices-riemann" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.riemann">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">riemann</tt><big>(</big><em>n</em><big>)</big><a class="headerlink" href="#rogues.matrices.riemann" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>RIEMANN    A matrix associated with the Riemann hypothesis.</dt>
+<dd><p class="first">A = RIEMANN(N) is an N-by-N matrix for which the
+Riemann hypothesis is true if and only if
+DET(A) = O( N! N^(-1/2+epsilon) ) for every epsilon &gt; 0</p>
+<blockquote>
+(<a href="#id1"><span class="problematic" id="id2">`</span></a>!&#8217; denotes factorial).</blockquote>
+<p>A = B(2:N+1, 2:N+1), where
+B(i,j) = i-1 if i divides j and -1 otherwise.
+Properties include, with M = N+1:</p>
+<blockquote>
+Each eigenvalue E(i) satisfies ABS(E(i)) &lt;= M - 1/M.
+i &lt;= E(i) &lt;= i+1 with at most M-SQRT(M) exceptions.
+All integers in the interval (M/3, M/2] are eigenvalues.</blockquote>
+<p>See also REDHEFF.</p>
+<p class="last">Reference:
+F. Roesler, Riemann&#8217;s hypothesis as an eigenvalue problem,
+Linear Algebra and Appl., 81 (1986), pp. 153-198.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.redheff.html">rogues.matrices.redheff</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.smoke.html">rogues.matrices.smoke</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

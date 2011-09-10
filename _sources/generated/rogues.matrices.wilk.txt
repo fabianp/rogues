@@ -1,0 +1,6 @@
+rogues.matrices.wilk
+====================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: wilk

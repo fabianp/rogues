@@ -1,0 +1,6 @@
+rogues.matrices.dorr
+====================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: dorr

@@ -1,0 +1,6 @@
+rogues.matrices.grcar
+=====================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: grcar

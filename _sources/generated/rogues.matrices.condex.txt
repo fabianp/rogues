@@ -1,0 +1,6 @@
+rogues.matrices.condex
+======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: condex

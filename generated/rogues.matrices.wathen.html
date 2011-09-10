@@ -1,0 +1,97 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.wathen &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.wilk" href="rogues.matrices.wilk.html" />
+    <link rel="prev" title="rogues.matrices.triw" href="rogues.matrices.triw.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.wathen</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.triw.html">rogues.matrices.triw</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.wilk.html">rogues.matrices.wilk</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-wathen">
+<h1>rogues.matrices.wathen<a class="headerlink" href="#rogues-matrices-wathen" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.wathen">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">wathen</tt><big>(</big><em>nx</em>, <em>ny</em>, <em>k=0</em><big>)</big><a class="headerlink" href="#rogues.matrices.wathen" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>WATHEN  Wathen matrix - a finite element matrix (sparse, random entries).</dt>
+<dd><p class="first">a = wathen(nx, ny) is a sparse random n-by-n finite element matrix
+where n = 3*nx*ny + 2*nx + 2*ny + 1.
+A is precisely the <a href="#id1"><span class="problematic" id="id2">`</span></a>consistent mass matrix&#8217; for a regular NX-by-NY
+grid of 8-node (serendipity) elements in 2 space dimensions.
+A is symmetric positive definite for any (positive) values of
+the <a href="#id3"><span class="problematic" id="id4">`</span></a>density&#8217;, rho(nx,ny), which is chosen randomly in this routine.
+in particular, if d = diag(diag(a)), then</p>
+<blockquote>
+0.25 &lt;= eig(inv(d)*a) &lt;= 4.5</blockquote>
+<p>for any positive integers nx and ny and any densities rho(nx,ny).
+this diagonally scaled matrix is returned by wathen(nx,ny,1).
+For k = 1 wathen returns the diagonally scaled matrix.</p>
+<p class="last">Reference:
+A.J. Wathen, Realistic eigenvalue bounds for the Galerkin
+mass matrix, IMA J. Numer. Anal., 7 (1987), pp. 449-457.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.triw.html">rogues.matrices.triw</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.wilk.html">rogues.matrices.wilk</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

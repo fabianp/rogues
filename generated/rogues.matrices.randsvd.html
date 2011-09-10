@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.randsvd &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.redheff" href="rogues.matrices.redheff.html" />
+    <link rel="prev" title="rogues.matrices.rando" href="rogues.matrices.rando.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.randsvd</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.rando.html">rogues.matrices.rando</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.redheff.html">rogues.matrices.redheff</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-randsvd">
+<h1>rogues.matrices.randsvd<a class="headerlink" href="#rogues-matrices-randsvd" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.randsvd">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">randsvd</tt><big>(</big><em>n</em>, <em>kappa=None</em>, <em>mode=3</em>, <em>kl=None</em>, <em>ku=None</em><big>)</big><a class="headerlink" href="#rogues.matrices.randsvd" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>RANDSVD  Random matrix with pre-assigned singular values.</dt>
+<dd><p class="first">randsvd(n, kappa, mode, kl, ku) is a (banded) random matrix of order n
+with cond(a) = kappa and singular values from the distribution mode.
+n may be a 2-tuple, in which case the matrix is n[0]-by-n[1].
+Available types:</p>
+<blockquote>
+mode = 1:   one large singular value,
+mode = 2:   one small singular value,
+mode = 3:   geometrically distributed singular values,
+mode = 4:   arithmetically distributed singular values,
+mode = 5:   random singular values with unif. dist. logarithm.</blockquote>
+<p>If omitted, mode defaults to 3, and kappa defaults to sqrt(1/eps).
+If mode &lt; 0 then the effect is as for abs(mode) except that in the
+original matrix of singular values the order of the diagonal entries
+is reversed: small to large instead of large to small.
+KL and KU are the lower and upper bandwidths respectively; if they
+are omitted a full matrix is produced.
+If only KL is present, KU defaults to KL.
+Special case: if KAPPA &lt; 0 then a random full symmetric positive</p>
+<blockquote>
+definite matrix is produced with cond(a) = -kappa and
+eigenvalues distributed according to mode.
+kl and ku, if present, are ignored.</blockquote>
+<p>Reference:
+N.J. Higham, Accuracy and Stability of Numerical Algorithms,</p>
+<blockquote>
+Society for Industrial and Applied Mathematics, Philadelphia, PA,
+USA, 2002; sec. 28.3.</blockquote>
+<p class="last">This routine is similar to the more comprehensive Fortran routine xLATMS
+in the following reference:
+J.W. Demmel and A. McKenney, A test matrix generation suite,
+LAPACK Working Note #9, Courant Institute of Mathematical Sciences,
+New York, 1989.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.rando.html">rogues.matrices.rando</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.redheff.html">rogues.matrices.redheff</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

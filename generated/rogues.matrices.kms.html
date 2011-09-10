@@ -1,0 +1,110 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.kms &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.krylov" href="rogues.matrices.krylov.html" />
+    <link rel="prev" title="rogues.matrices.kahan" href="rogues.matrices.kahan.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.kms</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.kahan.html">rogues.matrices.kahan</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.krylov.html">rogues.matrices.krylov</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-kms">
+<h1>rogues.matrices.kms<a class="headerlink" href="#rogues-matrices-kms" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.kms">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">kms</tt><big>(</big><em>n</em>, <em>rho=0.5</em><big>)</big><a class="headerlink" href="#rogues.matrices.kms" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>kms   Kac-Murdock-Szego Toeplitz matrix.</dt>
+<dd><p class="first">a = kms(n, rho) is the n-by-n Kac-Murdock-Szego Toeplitz matrix with
+a(i,j) = rho**(abs((i-j))) (for real rho).
+If RHO is complex, then the same formula holds except that elements
+below the diagonal are conjugated.
+RHO defaults to 0.5.
+Properties:</p>
+<blockquote class="last">
+<blockquote>
+<dl class="docutils">
+<dt>a has an LDL&#8217; factorization with</dt>
+<dd><blockquote class="first">
+L = INV(TRIW(N,-RHO,1)&#8217;),
+D(i,i) = (1-ABS(RHO)^2)*EYE(N) except D(1,1) = 1.</blockquote>
+<p class="last">NOTE: I have not been able to verify this property. See
+test_rogues.py for more details.</p>
+</dd>
+</dl>
+<p>a is positive definite if and only if 0 &lt; ABS(RHO) &lt; 1.</p>
+<dl class="docutils">
+<dt>INV(A) is tridiagonal.</dt>
+<dd>NOTE: verified on several examples and used in unit test.</dd>
+</dl>
+</blockquote>
+<p>Reference:
+W.F. Trench, Numerical solution of the eigenvalue problem
+for Hermitian Toeplitz matrices, SIAM J. Matrix Analysis and Appl.,
+10 (1989), pp. 135-146 (and see the references therein).</p>
+</blockquote>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.kahan.html">rogues.matrices.kahan</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.krylov.html">rogues.matrices.krylov</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

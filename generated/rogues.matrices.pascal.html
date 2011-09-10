@@ -1,0 +1,135 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.pascal &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.pdtoep" href="rogues.matrices.pdtoep.html" />
+    <link rel="prev" title="rogues.matrices.parter" href="rogues.matrices.parter.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.pascal</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.parter.html">rogues.matrices.parter</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.pdtoep.html">rogues.matrices.pdtoep</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-pascal">
+<h1>rogues.matrices.pascal<a class="headerlink" href="#rogues-matrices-pascal" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.pascal">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">pascal</tt><big>(</big><em>n</em>, <em>k=0</em><big>)</big><a class="headerlink" href="#rogues.matrices.pascal" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>PASCAL  Pascal matrix.</dt>
+<dd><p class="first">p = pascal(n) is the pascal matrix of order n: a symmetric positive
+definite matrix with integer entries taken from Pascal&#8217;s
+triangle.
+The Pascal matrix is totally positive and its inverse has
+integer entries.  Its eigenvalues occur in reciprocal pairs.
+cond(p) is approximately 16**n/(n*pi) for large n.
+pascal(n,1) is the lower triangular cholesky factor (up to signs
+of columns) of the pascal matrix.   It is involutary (is its own
+inverse).
+pascal(n,2) is a transposed and permuted version of pascal(n,1)
+which is a cube root of the identity.</p>
+<p>References:
+R. Brawer and M. Pirovino, The linear algebra of the Pascal matrix,</p>
+<blockquote>
+Linear Algebra and Appl., 174 (1992), pp. 13-23 (this paper
+gives a factorization of L = PASCAL(N,1) and a formula for the
+elements of L^k).</blockquote>
+<dl class="docutils">
+<dt>N.J. Higham, Accuracy and Stability of Numerical Algorithms,</dt>
+<dd>Society for Industrial and Applied Mathematics, Philadelphia, PA,
+USA, 2002; sec. 28.4.</dd>
+</dl>
+<ol class="upperalpha" start="19">
+<li><p class="first">Karlin, Total Positivity, Volume 1, Stanford University Press,
+1968.  (Page 137: shows i+j-1 choose j is TP (i,j=0,1,...).</p>
+<blockquote>
+<p>PASCAL(N) is a submatrix of this matrix.)</p>
+</blockquote>
+</li>
+</ol>
+<ol class="upperalpha simple" start="13">
+<li>Newman and J. Todd, The evaluation of matrix inversion programs,
+J. Soc. Indust. Appl. Math., 6(4):466&#8211;476, 1958.</li>
+</ol>
+<ol class="upperalpha simple" start="8">
+<li>Rutishauser, On test matrices, Programmation en Mathematiques
+Numeriques, Editions Centre Nat. Recherche Sci., Paris, 165,
+1966, pp. 349-365.  (Gives an integral formula for the
+elements of PASCAL(N).)</li>
+</ol>
+<ol class="upperalpha simple" start="10">
+<li>Todd, Basic Numerical Mathematics, Vol. 2: Numerical Algebra,
+Birkhauser, Basel, and Academic Press, New York, 1977, p. 172.</li>
+</ol>
+<dl class="last docutils">
+<dt>H.W. Turnbull, The Theory of Determinants, Matrices, and Invariants,</dt>
+<dd>Blackie, London and Glasgow, 1929.  (PASCAL(N,2) on page 332.)</dd>
+</dl>
+</dd>
+</dl>
+<p>Note added in porting: for pascal(10) the properties above seem to be
+verified, especially the eigenvalues being reprocal pairs (all of which
+have the same constant value of one).  det(pascal(n)) is also ~one up to
+and including n=17.  At n=18 things go to hell and this appears to be
+where we step off a cliff</p>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.parter.html">rogues.matrices.parter</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.pdtoep.html">rogues.matrices.pdtoep</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

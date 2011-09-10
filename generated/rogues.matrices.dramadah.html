@@ -1,0 +1,105 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.dramadah &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.fiedler" href="rogues.matrices.fiedler.html" />
+    <link rel="prev" title="rogues.matrices.dorr" href="rogues.matrices.dorr.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.dramadah</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.dorr.html">rogues.matrices.dorr</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.fiedler.html">rogues.matrices.fiedler</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-dramadah">
+<h1>rogues.matrices.dramadah<a class="headerlink" href="#rogues-matrices-dramadah" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.dramadah">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">dramadah</tt><big>(</big><em>n</em>, <em>k=1</em><big>)</big><a class="headerlink" href="#rogues.matrices.dramadah" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>dramadah  a (0,1) matrix whose inverse has large integer entries.</dt>
+<dd><p class="first">An anti-hadamard matrix a is a matrix with elements 0 or 1 for
+which mu(a) := norm(inv(a),&#8217;fro&#8217;) is maximal.
+a = dramadah(n, k) is an n-by-n (0,1) matrix for which mu(a) is
+relatively large, although not necessarily maximal.
+Available types (the default is k = 1):
+k = 1: a is toeplitz, with abs(det(a)) = 1, and mu(a) &gt; c(1.75)^n,</p>
+<blockquote>
+where c is a constant.</blockquote>
+<p>k = 2: a is upper triangular and toeplitz.
+the inverses of both types have integer entries.</p>
+<p>Another interesting (0,1) matrix:
+K = 3: A has maximal determinant among (0,1) lower Hessenberg
+matrices: det(A) = the n&#8217;th Fibonacci number.  A is Toeplitz.
+The eigenvalues have an interesting distribution in the complex
+plane.</p>
+<p>References:
+R.L. Graham and N.J.A. Sloane, Anti-Hadamard matrices,</p>
+<blockquote>
+Linear Algebra and Appl., 62 (1984), pp. 113-137.</blockquote>
+<ol class="last upperalpha simple" start="12">
+<li>Ching, The maximum determinant of an nxn lower Hessenberg
+(0,1) matrix, Linear Algebra and Appl., 183 (1993), pp. 147-153.</li>
+</ol>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.dorr.html">rogues.matrices.dorr</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.fiedler.html">rogues.matrices.fiedler</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

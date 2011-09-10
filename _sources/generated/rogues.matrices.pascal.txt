@@ -1,0 +1,6 @@
+rogues.matrices.pascal
+======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: pascal

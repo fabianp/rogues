@@ -1,0 +1,6 @@
+rogues.matrices.minij
+=====================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: minij

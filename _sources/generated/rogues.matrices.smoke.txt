@@ -1,0 +1,6 @@
+rogues.matrices.smoke
+=====================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: smoke

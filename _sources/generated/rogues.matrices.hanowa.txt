@@ -1,0 +1,6 @@
+rogues.matrices.hanowa
+======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: hanowa

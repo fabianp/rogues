@@ -1,0 +1,6 @@
+rogues.matrices.chow
+====================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: chow

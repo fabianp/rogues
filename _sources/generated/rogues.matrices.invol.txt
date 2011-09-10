@@ -1,0 +1,6 @@
+rogues.matrices.invol
+=====================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: invol

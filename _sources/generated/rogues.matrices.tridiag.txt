@@ -1,0 +1,6 @@
+rogues.matrices.tridiag
+=======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: tridiag

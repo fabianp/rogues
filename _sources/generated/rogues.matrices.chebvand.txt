@@ -1,0 +1,6 @@
+rogues.matrices.chebvand
+========================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: chebvand

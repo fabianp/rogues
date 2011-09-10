@@ -1,0 +1,6 @@
+rogues.matrices.lauchli
+=======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: lauchli

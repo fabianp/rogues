@@ -1,0 +1,6 @@
+rogues.matrices.hilb
+====================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: hilb

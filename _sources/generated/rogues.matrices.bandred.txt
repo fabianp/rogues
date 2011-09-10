@@ -1,0 +1,6 @@
+rogues.matrices.bandred
+=======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: bandred

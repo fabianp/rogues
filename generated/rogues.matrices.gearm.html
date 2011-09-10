@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.gearm &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.gfpp" href="rogues.matrices.gfpp.html" />
+    <link rel="prev" title="rogues.matrices.frank" href="rogues.matrices.frank.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.gearm</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.frank.html">rogues.matrices.frank</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.gfpp.html">rogues.matrices.gfpp</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-gearm">
+<h1>rogues.matrices.gearm<a class="headerlink" href="#rogues-matrices-gearm" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.gearm">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">gearm</tt><big>(</big><em>n</em>, <em>i=None</em>, <em>j=None</em><big>)</big><a class="headerlink" href="#rogues.matrices.gearm" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>GEARM   Gear matrix.</dt>
+<dd><p class="first">A = GEARM(N,I,J) is the N-by-N matrix with ones on the sub- and
+super-diagonals, SIGN(I) in the (1,ABS(I)) position, SIGN(J)
+in the (N,N+1-ABS(J)) position, and zeros everywhere else.
+Defaults: i = n - 1, j = -(n - 1).  Note we use the zero based
+indexing for i and j.
+All eigenvalues are of the form 2*COS(a) and the eigenvectors
+are of the form [SIN(w+a), SIN(w+2a), ..., SIN(w+Na)].
+The values of a and w are given in the reference below.
+A can have double and triple eigenvalues and can be defective.
+GEARM(N) is singular.</p>
+<p class="last">(GEAR is a Simulink function, hence GEARM for Gear matrix.)
+Reference:
+C.W. Gear, A simple set of test matrices for eigenvalue programs,
+Math. Comp., 23 (1969), pp. 119-125.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.frank.html">rogues.matrices.frank</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.gfpp.html">rogues.matrices.gfpp</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+rogues.matrices.gearm
+=====================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: gearm

@@ -1,0 +1,6 @@
+rogues.matrices.kms
+===================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: kms

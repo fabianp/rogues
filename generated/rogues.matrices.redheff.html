@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.redheff &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.riemann" href="rogues.matrices.riemann.html" />
+    <link rel="prev" title="rogues.matrices.randsvd" href="rogues.matrices.randsvd.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.redheff</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.randsvd.html">rogues.matrices.randsvd</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.riemann.html">rogues.matrices.riemann</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-redheff">
+<h1>rogues.matrices.redheff<a class="headerlink" href="#rogues-matrices-redheff" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.redheff">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">redheff</tt><big>(</big><em>n</em><big>)</big><a class="headerlink" href="#rogues.matrices.redheff" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>redheff    a (0,1) matrix of redheffer associated with the</dt>
+<dd><blockquote class="first">
+riemann hypothesis.</blockquote>
+<dl class="docutils">
+<dt>a = redheff(n) is an n-by-n matrix of 0s and 1s defined by</dt>
+<dd>a[i,j] = 1 if j = 0 or if (i+1) divides (j+1),
+a[i,j] = 0 otherwise.</dd>
+</dl>
+<p>It has n - floor(log2(n)) - 1 eigenvalues equal to 1,
+a real eigenvalue (the spectral radius) approximately sqrt(n),
+a negative eigenvalue approximately -sqrt(n),
+and the remaining eigenvalues are provably <a href="#id1"><span class="problematic" id="id2">``</span></a>small&#8217;&#8216;.
+barrett and jarvis (1992) conjecture that</p>
+<blockquote>
+<dl class="docutils">
+<dt><a href="#id3"><span class="problematic" id="id4">``</span></a>the small eigenvalues all lie inside the unit circle</dt>
+<dd>abs(z) = 1&#8217;&#8216;,</dd>
+</dl>
+</blockquote>
+<p>and a proof of this conjecture, together with a proof that some
+eigenvalue tends to zero as n tends to infinity, would yield
+a new proof of the prime number theorem.
+The Riemann hypothesis is true if and only if
+det(a) = o( n^(1/2+epsilon) ) for every epsilon &gt; 0</p>
+<blockquote>
+(<a href="#id5"><span class="problematic" id="id6">`</span></a>!&#8217; denotes factorial).</blockquote>
+<p>see also riemann().</p>
+<p class="last">Reference:
+W.W. Barrett and T.J. Jarvis,
+Spectral Properties of a Matrix of Redheffer,
+Linear Algebra and Appl., 162 (1992), pp. 673-683.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.randsvd.html">rogues.matrices.randsvd</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.riemann.html">rogues.matrices.riemann</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

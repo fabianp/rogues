@@ -1,0 +1,6 @@
+rogues.matrices.dingdong
+========================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: dingdong

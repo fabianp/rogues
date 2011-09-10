@@ -1,0 +1,6 @@
+rogues.matrices.chebspec
+========================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: chebspec

@@ -1,0 +1,6 @@
+rogues.matrices.randsvd
+=======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: randsvd

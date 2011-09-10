@@ -1,0 +1,6 @@
+rogues.matrices.cycol
+=====================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: cycol

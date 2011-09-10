@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.chebvand &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.chow" href="rogues.matrices.chow.html" />
+    <link rel="prev" title="rogues.matrices.chebspec" href="rogues.matrices.chebspec.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.chebvand</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.chebspec.html">rogues.matrices.chebspec</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.chow.html">rogues.matrices.chow</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-chebvand">
+<h1>rogues.matrices.chebvand<a class="headerlink" href="#rogues-matrices-chebvand" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.chebvand">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">chebvand</tt><big>(</big><em>m</em>, <em>p=None</em><big>)</big><a class="headerlink" href="#rogues.matrices.chebvand" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>CHEBVAND  Vandermonde-like matrix for the Chebyshev polynomials.</dt>
+<dd><p class="first">c = chebvand(p), where P is a vector, produces the (primal)
+Chebyshev Vandermonde matrix based on the points P,
+i.e., c[i,j] = t_{i-1}(p[j]), where T_{i-1} is the Chebyshev
+polynomial of degree i-1.
+CHEBVAND(M,P) is a rectangular version of CHEBVAND(P) with M rows.
+Special case: If P is a scalar then P equally spaced points on</p>
+<blockquote class="last">
+<blockquote>
+[0,1] are used.</blockquote>
+<p>Reference:
+N.J. Higham, Stability analysis of algorithms for solving confluent
+Vandermonde-like systems, SIAM J. Matrix Anal. Appl., 11 (1990),
+pp. 23-41.</p>
+</blockquote>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.chebspec.html">rogues.matrices.chebspec</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.chow.html">rogues.matrices.chow</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

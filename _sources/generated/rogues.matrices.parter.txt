@@ -1,0 +1,6 @@
+rogues.matrices.parter
+======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: parter

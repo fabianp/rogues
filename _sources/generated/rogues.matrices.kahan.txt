@@ -1,0 +1,6 @@
+rogues.matrices.kahan
+=====================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: kahan

@@ -1,0 +1,6 @@
+rogues.matrices.clement
+=======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: clement

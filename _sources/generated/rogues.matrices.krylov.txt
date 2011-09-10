@@ -1,0 +1,6 @@
+rogues.matrices.krylov
+======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: krylov

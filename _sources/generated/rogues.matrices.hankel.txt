@@ -1,0 +1,6 @@
+rogues.matrices.hankel
+======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: hankel

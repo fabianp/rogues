@@ -1,0 +1,6 @@
+rogues.matrices.neumann
+=======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: neumann

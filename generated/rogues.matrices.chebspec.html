@@ -1,0 +1,107 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.chebspec &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.chebvand" href="rogues.matrices.chebvand.html" />
+    <link rel="prev" title="rogues.matrices.cauchy" href="rogues.matrices.cauchy.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.chebspec</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.cauchy.html">rogues.matrices.cauchy</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.chebvand.html">rogues.matrices.chebvand</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-chebspec">
+<h1>rogues.matrices.chebspec<a class="headerlink" href="#rogues-matrices-chebspec" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.chebspec">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">chebspec</tt><big>(</big><em>n</em>, <em>k=0</em><big>)</big><a class="headerlink" href="#rogues.matrices.chebspec" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>CHEBSPEC  Chebyshev spectral differentiation matrix.</dt>
+<dd><p class="first">c = chebspec(n, k) is a Chebyshev spectral differentiation
+matrix of order n.  k = 0 (the default) or 1.
+For k = 0 (<a href="#id1"><span class="problematic" id="id2">`</span></a>no boundary conditions&#8217;), c is nilpotent, with</p>
+<blockquote>
+c**n = 0 and it has the null vector ones(n,1).
+c is similar to a Jordan block of size n with eigenvalue zero.
+Default is k = 0</blockquote>
+<dl class="docutils">
+<dt>For k = 1, c is nonsingular and well-conditioned, and its eigenvalues</dt>
+<dd>have negative real parts.</dd>
+<dt>For both k, the computed eigenvector matrix x from eig is</dt>
+<dd>ill-conditioned (mesh(real(x)) is interesting).</dd>
+</dl>
+<p>References:
+C. Canuto, M.Y. Hussaini, A. Quarteroni and T.A. Zang, Spectral</p>
+<blockquote>
+Methods in Fluid Dynamics, Springer-Verlag, Berlin, 1988; p. 69.</blockquote>
+<dl class="docutils">
+<dt>L.N. Trefethen and M.R. Trummer, An instability phenomenon in</dt>
+<dd>spectral methods, SIAM J. Numer. Anal., 24 (1987), pp. 1008-1023.</dd>
+</dl>
+<ol class="last upperalpha simple" start="4">
+<li>Funaro, Computing the inverse of the Chebyshev collocation
+derivative, SIAM J. Sci. Stat. Comput., 9 (1988), pp. 1050-1057.</li>
+</ol>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.cauchy.html">rogues.matrices.cauchy</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.chebvand.html">rogues.matrices.chebvand</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

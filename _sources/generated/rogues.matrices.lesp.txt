@@ -1,0 +1,6 @@
+rogues.matrices.lesp
+====================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: lesp

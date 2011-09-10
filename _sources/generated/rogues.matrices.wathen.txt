@@ -1,0 +1,6 @@
+rogues.matrices.wathen
+======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: wathen

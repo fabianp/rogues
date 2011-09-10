@@ -1,0 +1,6 @@
+rogues.matrices.gfpp
+====================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: gfpp

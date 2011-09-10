@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rogues.matrices.cauchy &mdash; rogues v0.3 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="rogues v0.3 documentation" href="../index.html" />
+    <link rel="next" title="rogues.matrices.chebspec" href="rogues.matrices.chebspec.html" />
+    <link rel="prev" title="rogues.matrices.bandred" href="rogues.matrices.bandred.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>rogues v0.3 documentation</span></a></h1>
+        <h2 class="heading"><span>rogues.matrices.cauchy</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.bandred.html">rogues.matrices.bandred</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.chebspec.html">rogues.matrices.chebspec</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="rogues-matrices-cauchy">
+<h1>rogues.matrices.cauchy<a class="headerlink" href="#rogues-matrices-cauchy" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="rogues.matrices.cauchy">
+<tt class="descclassname">rogues.matrices.</tt><tt class="descname">cauchy</tt><big>(</big><em>x</em>, <em>y=None</em><big>)</big><a class="headerlink" href="#rogues.matrices.cauchy" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>cauchy  cauchy matrix.</dt>
+<dd><p class="first">c = cauchy(x, y), where x, y are n-vectors, is the n-by-n matrix
+with c(i,j) = 1/(x(i)+y(j)).   By default, y = x.
+Special case: if x is a scalar cauchy(x) is the same as cauchy(1:x).
+Explicit formulas are known for DET(C) (which is nonzero if X and Y
+both have distinct elements) and the elements of INV(C).
+C is totally positive if 0 &lt; X(1) &lt; ... &lt; X(N) and
+0 &lt; Y(1) &lt; ... &lt; Y(N).</p>
+<p>References:
+N.J. Higham, Accuracy and Stability of Numerical Algorithms,</p>
+<blockquote>
+Society for Industrial and Applied Mathematics, Philadelphia, PA,
+USA, 2002; sec. 28.1.</blockquote>
+<dl class="docutils">
+<dt>D.E. Knuth, The Art of Computer Programming, Volume 1,</dt>
+<dd>Fundamental Algorithms, second edition, Addison-Wesley, Reading,
+Massachusetts, 1973, p. 36.</dd>
+<dt>E.E. Tyrtyshnikov, Cauchy-Toeplitz matrices and some applications,</dt>
+<dd>Linear Algebra and Appl., 149 (1991), pp. 1-18.</dd>
+</dl>
+<ol class="last upperalpha simple" start="15">
+<li>Taussky and M. Marcus, Eigenvalues of finite matrices, in
+Survey of Numerical Analysis, J. Todd, ed., McGraw-Hill, New York,
+pp. 279-313, 1962. (States the totally positive property on p. 295.)</li>
+</ol>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="rogues.matrices.bandred.html">rogues.matrices.bandred</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="rogues.matrices.chebspec.html">rogues.matrices.chebspec</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Don MacMillen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+  </body>
+</html>

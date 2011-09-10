@@ -1,0 +1,6 @@
+rogues.matrices.compan
+======================
+
+.. currentmodule:: rogues.matrices
+
+.. autofunction:: compan
