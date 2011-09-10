@@ -1,3 +1,13 @@
+__all__ = [
+    'bandred', 'cauchy', 'chebspec', 'chebvand', 'chow', 'clement', 'comp',
+    'compan', 'condex', 'cycol', 'dingdong', 'dorr', 'dramadah', 'fiedler',
+    'forsythe', 'frank', 'gearm', 'gfpp', 'grcar', 'hadamard', 'hankel',
+    'hanowa', 'hilb', 'invhess', 'invol', 'ipjfact', 'jordbloc', 'kahan',
+    'kms', 'krylov', 'lauchli', 'lehmer', 'lesp', 'lotkin', 'minij', 'moler',
+    'neumann', 'ohess', 'parter', 'pascal', 'pdtoep', 'pei', 'pentoep', 'poisson',
+    'prolate', 'rando', 'randsvd', 'redheff', 'riemann', 'smoke',
+    'toeplitz', 'tridiag', 'triw', 'utils', 'warnings', 'wathen',
+    'wilk', 'wilkinson']
 
 from cauchy import *
 from chebspec import *
